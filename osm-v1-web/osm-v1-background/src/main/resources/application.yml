@@ -1,0 +1,13 @@
+server:
+  port: 8802
+dubbo:
+  application:
+    name: background-consumer
+  registry:
+    protocol: zookeeper
+    address: 192.168.3.105:2181
+  protocol:
+    name: dubbo
+    port: 28801
+  consumer:
+    timeout: 3000

@@ -1,0 +1,26 @@
+server:
+  port: 8801
+dubbo:
+  application:
+    name: product-provider
+  registry:
+    protocol: zookeeper
+    address: 192.168.3.105:2181
+  protocol:
+    port: 28801
+    name: dubbo
+  #provider:
+    #timeout: 3000
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/online-shopping-mall?characterEncoding=utf-8&SSLuse=true
+      username: root
+      password: root
+      db-type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+    mapper-locations: classpath:com/zzproo/mapper/*.xml
+    type-aliases-package: com.zzproo.entity
+    configuration:
+      map-underscore-to-camel-case: true
+      aggressive-lazy-loading: true

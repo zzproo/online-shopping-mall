@@ -4,7 +4,7 @@ import java.util.List;
 
 public abstract class BaseServiceImpl<T> implements IBaseService<T> {
 
-    abstract IBaseDao<T> getBaseDao();
+    public abstract IBaseDao<T> getBaseDao();
 
     @Override
     public int insert(T t) {

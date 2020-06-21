@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zzproo.mapper.IProductTypeMapper">
+<mapper namespace="com.zzproo.mapper.TProductTypeMapper">
     <resultMap id="BaseResultMap" type="com.zzproo.entity.TProductType">
         <id column="id" jdbcType="BIGINT" property="id" />
         <result column="pid" jdbcType="BIGINT" property="pid" />
